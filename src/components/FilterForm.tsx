@@ -23,16 +23,33 @@ export const FilterForm = memo<FilterFormProps>(
               <Col>
                 <InputGroup className="mb-3">
                   <Form.Control
+                    style={{
+                      boxShadow: '0 2px 5px black',
+                      background: 'bisque',
+                      color: 'green',
+                      fontWeight: '600',
+                      fontSize: '1.2rem',
+                      textShadow: '1px 1px 1px black',
+                    }}
                     id={'name'}
                     name={'name'}
-                    onChange={handleChange}
+                    autoComplete="name"
                     placeholder="name"
                     aria-label="name"
+                    onChange={handleChange}
                   />
                 </InputGroup>
               </Col>
               <Col>
                 <Form.Select
+                  style={{
+                    boxShadow: '0 2px 5px black',
+                    background: 'bisque',
+                    color: 'green',
+                    fontWeight: '600',
+                    fontSize: '1.2rem',
+                    textShadow: '1px 1px 1px black',
+                  }}
                   id={'groupId'}
                   name={'groupId'}
                   aria-label="Поиск по группе"

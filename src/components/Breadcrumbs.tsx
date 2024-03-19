@@ -11,7 +11,14 @@ export const Breadcrumbs = memo<BreadcrumbsProps>(({ pathNames }) => {
     <Row>
       <Col className={'mb-4'}>
         <ListGroup horizontal>
-          <ListGroup.Item>
+          <ListGroup.Item
+            style={{
+              boxShadow: '0 2px 5px black',
+              background: 'bisque',
+              fontWeight: '700',
+              textShadow: '1px 1px 1px black',
+            }}
+          >
             <Link to={'/'}>Home</Link>{' '}
           </ListGroup.Item>
           {pathNames.map((name, index) => {
@@ -21,7 +28,16 @@ export const Breadcrumbs = memo<BreadcrumbsProps>(({ pathNames }) => {
             const isLast = index === pathNames.length - 1
 
             return (
-              <ListGroup.Item key={routeTo}>
+              <ListGroup.Item
+                key={routeTo}
+                style={{
+                  boxShadow: '0 2px 5px black',
+                  background: 'bisque',
+                  color: 'green',
+                  fontWeight: '600',
+                  textShadow: '1px 1px 1px black',
+                }}
+              >
                 {isLast ? (
                   <span className={'active'}>{name}</span>
                 ) : (
