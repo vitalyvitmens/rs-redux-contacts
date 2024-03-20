@@ -1,6 +1,6 @@
 import { memo } from 'react'
-import { Col, ListGroup, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { Col, ListGroup, Row } from 'react-bootstrap'
 
 interface BreadcrumbsProps {
   pathNames: string[]

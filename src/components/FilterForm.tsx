@@ -1,8 +1,8 @@
+import { memo, Suspense } from 'react'
 import { Formik } from 'formik'
-import { Button, Col, Form, InputGroup, Row } from 'react-bootstrap'
-import { memo } from 'react'
 import { FormikConfig } from 'formik/dist/types'
 import { GroupContactsDto } from 'src/types/dto/GroupContactsDto'
+import { Button, Col, Form, InputGroup, Row } from 'react-bootstrap'
 
 export interface FilterFormValues {
   name: string
@@ -21,24 +21,26 @@ export const FilterForm = memo<FilterFormProps>(
           <Form onSubmit={handleSubmit} onChange={handleSubmit}>
             <Row xxl={4} className="g-4">
               <Col>
-                <InputGroup className="mb-3">
-                  <Form.Control
-                    style={{
-                      boxShadow: '0 2px 5px black',
-                      background: 'bisque',
-                      color: 'green',
-                      fontWeight: '600',
-                      fontSize: '1.2rem',
-                      textShadow: '1px 1px 1px black',
-                    }}
-                    id={'name'}
-                    name={'name'}
-                    autoComplete="name"
-                    placeholder="name"
-                    aria-label="name"
-                    onChange={handleChange}
-                  />
-                </InputGroup>
+                <Suspense>
+                  <InputGroup className="mb-3">
+                    <Form.Control
+                      style={{
+                        boxShadow: '0 2px 5px black',
+                        background: 'bisque',
+                        color: 'green',
+                        fontWeight: '600',
+                        fontSize: '1.2rem',
+                        textShadow: '1px 1px 1px black',
+                      }}
+                      id={'name'}
+                      name={'name'}
+                      autoComplete="name"
+                      placeholder="name"
+                      aria-label="name"
+                      onChange={handleChange}
+                    />
+                  </InputGroup>
+                </Suspense>
               </Col>
               <Col>
                 <Form.Select

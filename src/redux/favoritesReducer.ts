@@ -1,9 +1,9 @@
-import { ContactDto } from 'src/types/dto/ContactDto'
 import {
   ADD_TO_FAVORITES_ACTION,
   ProjectActions,
   REMOVE_FROM_FAVORITES_ACTION,
 } from './actions'
+import { ContactDto } from 'src/types/dto/ContactDto'
 
 export function favoritesReducer(
   state: ContactDto[] | undefined = [],

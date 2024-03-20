@@ -1,7 +1,8 @@
 import { memo } from 'react'
-import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { GroupContactsDto } from 'src/types/dto/GroupContactsDto'
+import { Card } from 'react-bootstrap'
+import './components.css'
 
 interface GroupContactsCardProps {
   groupContacts: GroupContactsDto
@@ -14,7 +15,7 @@ export const GroupContactsCard = memo<GroupContactsCardProps>(
     withLink,
   }) => {
     return (
-      <Card 
+      <Card
         key={id}
         style={{
           marginBottom: '1.5rem',

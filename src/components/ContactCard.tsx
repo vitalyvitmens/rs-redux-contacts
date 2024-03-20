@@ -1,9 +1,9 @@
 import { memo } from 'react'
-import { ContactDto } from 'src/types/dto/ContactDto'
-import { Card, ListGroup } from 'react-bootstrap'
 import { Link, useLocation } from 'react-router-dom'
 import { AddToFavorites } from './AddToFavorites'
 import { RemoveFromFavorites } from './RemoveFromFavorites'
+import { ContactDto } from 'src/types/dto/ContactDto'
+import { Card, ListGroup } from 'react-bootstrap'
 import './components.css'
 
 interface ContactCardProps {

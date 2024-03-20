@@ -3,13 +3,13 @@ import {
   combineReducers,
   applyMiddleware,
 } from 'redux'
-import { logActionMiddleware } from './logActionMiddleware'
-import { contactsReducer } from './contactsReducer'
-import { groupContactsReducer } from './groupContactsReducer'
-import { favoritesReducer } from './favoritesReducer'
 import thunkMiddleware from 'redux-thunk'
 import { persistReducer, persistStore } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
+import { contactsReducer } from './contactsReducer'
+import { groupContactsReducer } from './groupContactsReducer'
+import { favoritesReducer } from './favoritesReducer'
+import { logActionMiddleware } from './logActionMiddleware'
 import { composeWithDevTools } from '@redux-devtools/extension'
 
 const rootReducer = persistReducer(
