@@ -14,9 +14,10 @@ export const GroupContactsCard = memo<GroupContactsCardProps>(
     withLink,
   }) => {
     return (
-      <Card
+      <Card 
         key={id}
         style={{
+          marginBottom: '1.5rem',
           border: '1px solid bisque',
           background: 'bisque',
           boxShadow: '-4px 3px 8px black',
@@ -31,7 +32,9 @@ export const GroupContactsCard = memo<GroupContactsCardProps>(
         >
           {withLink ? <Link to={`/groups/${id}`}>{name}</Link> : name}
         </Card.Header>
-        <Card.Body style={{ color: 'green', fontWeight: '600' }}>{description}</Card.Body>
+        <Card.Body style={{ color: 'green', fontWeight: '600' }}>
+          <div className="row-truncate">{description}</div>
+        </Card.Body>
         <Card.Img
           style={{ boxShadow: '0 -2px 5px black' }}
           variant="top"

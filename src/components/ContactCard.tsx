@@ -4,6 +4,7 @@ import { Card, ListGroup } from 'react-bootstrap'
 import { Link, useLocation } from 'react-router-dom'
 import { AddToFavorites } from './AddToFavorites'
 import { RemoveFromFavorites } from './RemoveFromFavorites'
+import './components.css'
 
 interface ContactCardProps {
   contact: ContactDto
@@ -17,7 +18,11 @@ export const ContactCard = memo<ContactCardProps>(({ contact, withLink }) => {
   return (
     <Card
       key={id}
-      style={{ border: '1px solid bisque', boxShadow: '0 -2px 5px black' }}
+      style={{
+        textShadow: '1px 1px 1px black',
+        border: '1px solid bisque',
+        boxShadow: '0 -2px 5px black',
+      }}
     >
       <Card.Img variant="top" src={photo} />
       <Card.Body style={{ borderRadius: '5px', background: 'bisque' }}>
@@ -27,7 +32,11 @@ export const ContactCard = memo<ContactCardProps>(({ contact, withLink }) => {
             justifyContent: 'space-between',
           }}
         >
-          <Card.Title>
+          <Card.Title
+            style={{
+              color: 'blue',
+            }}
+          >
             {withLink ? (
               <Link
                 style={{
@@ -36,7 +45,7 @@ export const ContactCard = memo<ContactCardProps>(({ contact, withLink }) => {
                 }}
                 to={`/contact/${id}`}
               >
-                {name}
+                <div className="text-truncate">{name}</div>
               </Link>
             ) : (
               name
