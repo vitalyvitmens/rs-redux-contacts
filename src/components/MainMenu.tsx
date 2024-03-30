@@ -13,7 +13,7 @@ export const MainMenu = () => {
             style={{
               color: Colors.blue,
               fontWeight: '700',
-              textShadow: '-2px 1px 1px #fff',
+              textShadow: `-2px 1px 1px ${Colors.pureWhite}`,
               textDecoration: 'none',
             }}
           >

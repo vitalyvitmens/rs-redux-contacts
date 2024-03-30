@@ -36,7 +36,7 @@ export const ContactCard = memo<ContactCardProps>(({ contact, withLink }) => {
         >
           <Card.Title
             style={{
-              color: 'blue',
+              color: Colors.blue,
             }}
           >
             {withLink ? (
