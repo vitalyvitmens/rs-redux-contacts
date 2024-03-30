@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { RoutePaths } from 'src/routes/RoutePaths'
 import { addToFavoritesActionCreator } from 'src/redux/actions'
 import { useAppDispatch, useAppSelector } from 'src/redux/hooks'
 import { ContactDto } from 'src/types/dto/ContactDto'
@@ -19,7 +20,7 @@ export const AddToFavorites: React.FC<{
     <div
       onClick={() => {
         if (isInFavorites) {
-          navigate('/favorit')
+          navigate(RoutePaths.Favorit)
         } else {
           dispatch(addToFavoritesActionCreator(contact))
         }

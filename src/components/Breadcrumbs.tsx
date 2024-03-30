@@ -1,5 +1,6 @@
 import { memo } from 'react'
 import { Link } from 'react-router-dom'
+import { RoutePaths } from 'src/routes/RoutePaths'
 import { Col, ListGroup, Row } from 'react-bootstrap'
 
 interface BreadcrumbsProps {
@@ -19,7 +20,7 @@ export const Breadcrumbs = memo<BreadcrumbsProps>(({ pathNames }) => {
               textShadow: '1px 1px 1px black',
             }}
           >
-            <Link to={'/'}>Home</Link>{' '}
+            <Link to={RoutePaths.Home}>Home</Link>{' '}
           </ListGroup.Item>
           {pathNames.map((name, index) => {
             const routeTo = `/${pathNames.slice(0, index + 1).join('/')}`

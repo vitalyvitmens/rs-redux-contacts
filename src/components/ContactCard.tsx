@@ -1,5 +1,6 @@
 import { memo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { RoutePaths } from 'src/routes/RoutePaths'
 import { AddToFavorites } from './AddToFavorites'
 import { RemoveFromFavorites } from './RemoveFromFavorites'
 import { ContactDto } from 'src/types/dto/ContactDto'
@@ -43,7 +44,7 @@ export const ContactCard = memo<ContactCardProps>(({ contact, withLink }) => {
                   fontWeight: '700',
                   textShadow: '1px 1px 1px black',
                 }}
-                to={`/contact/${id}`}
+                to={`${RoutePaths.Contacts}/${id}`}
               >
                 <div className="text-truncate">{name}</div>
               </Link>
@@ -51,7 +52,7 @@ export const ContactCard = memo<ContactCardProps>(({ contact, withLink }) => {
               name
             )}
           </Card.Title>
-          {location.pathname === '/favorit' ? (
+          {location.pathname === RoutePaths.Favorit ? (
             <RemoveFromFavorites id={contact.id} />
           ) : (
             <AddToFavorites contact={contact} />

@@ -1,5 +1,6 @@
 import { memo } from 'react'
 import { Link } from 'react-router-dom'
+import { RoutePaths } from 'src/routes/RoutePaths'
 import { GroupContactsDto } from 'src/types/dto/GroupContactsDto'
 import { Card } from 'react-bootstrap'
 import './components.css'
@@ -31,7 +32,11 @@ export const GroupContactsCard = memo<GroupContactsCardProps>(
             textShadow: '1px 1px 1px black',
           }}
         >
-          {withLink ? <Link to={`/groups/${id}`}>{name}</Link> : name}
+          {withLink ? (
+            <Link to={`${RoutePaths.Groups}/${id}`}>{name}</Link>
+          ) : (
+            name
+          )}
         </Card.Header>
         <Card.Body style={{ color: 'green', fontWeight: '600' }}>
           <div className="row-truncate">{description}</div>
