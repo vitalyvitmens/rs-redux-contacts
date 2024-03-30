@@ -12,4 +12,5 @@ export const Colors = {
   red: '#FF0000',
   darkBrown: '#332400',
   bootstrapBlue: '#007bff',
+  bisque: '#ffe4b5',
 }

@@ -1,19 +1,20 @@
-import { RoutePaths } from 'src/routes/RoutePaths'
-import { Container, Nav, Navbar, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { RoutePaths } from 'src/routes/RoutePaths'
+import { Colors } from 'src/constants/colors'
+import { Container, Nav, Navbar, NavItem } from 'react-bootstrap'
 
 export const MainMenu = () => {
   return (
-    <Navbar bg="bisque" expand="lg">
+    <Navbar bg={Colors.bisque} expand="lg">
       <Container>
         <Navbar.Brand>
           <Link
             to={RoutePaths.Home}
             style={{
-              color: '#0000FF',
+              color: Colors.blue,
               fontWeight: '700',
               textShadow: '-2px 1px 1px #fff',
-              textDecoration: 'none', // Убедитесь, что текст не подчеркнут
+              textDecoration: 'none',
             }}
           >
             <h1>Книга контактов</h1>
@@ -24,10 +25,10 @@ export const MainMenu = () => {
             <Link
               to={RoutePaths.Groups}
               style={{
-                color: '#FF0000',
+                color: Colors.red,
                 fontWeight: '700',
-                textShadow: '1px 1px 1px black',
-                textDecoration: 'none', // Убедитесь, что текст не подчеркнут
+                textShadow: `1px 1px 1px ${Colors.black}`,
+                textDecoration: 'none',
               }}
             >
               Группы
@@ -37,10 +38,10 @@ export const MainMenu = () => {
             <Link
               to={RoutePaths.Favorit}
               style={{
-                color: '#FF0000',
+                color: Colors.red,
                 fontWeight: '700',
-                textShadow: '1px 1px 1px black',
-                textDecoration: 'none', // Убедитесь, что текст не подчеркнут
+                textShadow: `1px 1px 1px ${Colors.black}`,
+                textDecoration: 'none',
               }}
             >
               Избранное

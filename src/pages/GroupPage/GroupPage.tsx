@@ -12,7 +12,8 @@ export const GroupPage = () => {
   const { groupId } = useParams<{ groupId: string }>()
   const [allcontacts, setAllcontacts] = useState<ContactDto[]>([])
 
-  const { groups, contacts } = useAppSelector((state) => state)
+  const groups = useAppSelector((state) => state.groups)
+  const contacts = useAppSelector((state) => state.contacts)
 
   const [groupContacts, setGroupContacts] = useState<GroupContactsDto>()
 

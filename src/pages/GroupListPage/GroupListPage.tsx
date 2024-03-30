@@ -4,7 +4,6 @@ import { Col, Row } from 'react-bootstrap'
 
 export const GroupListPage = () => {
   const groups = useAppSelector((state) => state.groups)
-  console.log(groups)
 
   return (
     <Row xxl={4}>
