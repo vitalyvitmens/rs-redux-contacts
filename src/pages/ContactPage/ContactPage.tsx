@@ -1,8 +1,8 @@
 import { FC, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useAppSelector } from 'src/redux/hooks'
-import { Empty } from 'src/components/Empty'
-import { ContactCard } from 'src/components/ContactCard'
+import { Empty } from 'src/components/Empty/Empty'
+import { ContactCard } from 'src/components/ContactCard/ContactCard'
 import { ContactDto } from 'src/types/dto/ContactDto'
 import { Col, Row } from 'react-bootstrap'
 

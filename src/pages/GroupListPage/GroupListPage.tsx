@@ -1,5 +1,5 @@
 import { useAppSelector } from 'src/redux/hooks'
-import { GroupContactsCard } from 'src/components/GroupContactsCard'
+import { GroupContactsCard } from 'src/components/GroupContactsCard/GroupContactsCard'
 import { Col, Row } from 'react-bootstrap'
 
 export const GroupListPage = () => {
