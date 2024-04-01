@@ -11,9 +11,10 @@ import { groupContactsReducer } from './groupContactsReducer'
 import { favoritesReducer } from './favoritesReducer'
 import { logActionMiddleware } from './logActionMiddleware'
 import { composeWithDevTools } from '@redux-devtools/extension'
+import { LOCAL_STORAGE_KEY } from 'src/constants/storageKeys'
 
 const rootReducer = persistReducer(
-  { key: 'rs-redux-contacts', storage: storage },
+  { key: LOCAL_STORAGE_KEY, storage: storage },
   combineReducers({
     contacts: contactsReducer,
     groups: groupContactsReducer,
