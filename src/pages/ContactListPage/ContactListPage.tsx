@@ -20,7 +20,7 @@ export const ContactListPage = () => {
     }
   }, [contacts, groups])
 
-  const onFilter = (fv: Partial<FilterFormValues>) => {
+  const handleFilter = (fv: Partial<FilterFormValues>) => {
     const filtered = contacts.filter((contact) => {
       const nameMatch =
         !fv.name || contact.name.toLowerCase().includes(fv.name.toLowerCase())
@@ -46,7 +46,7 @@ export const ContactListPage = () => {
         <Suspense>
           <FilterForm
             groupContactsList={groups}
-            onSubmit={onFilter}
+            onSubmit={handleFilter}
             initialValues={{}}
           />
         </Suspense>
