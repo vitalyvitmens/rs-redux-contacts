@@ -1,4 +1,4 @@
-import DATA_CONTACT from './contacts.json'
-import DATA_GROUP_CONTACT from './group-contacts.json'
+import { contacts } from './contacts'
+import { groupContacts } from './groupContacts'
 
-export { DATA_CONTACT, DATA_GROUP_CONTACT }
+export { contacts, groupContacts }
