@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { RoutePaths } from 'src/routes/RoutePaths'
-import { addToFavoritesActionCreator } from 'src/redux/actions/actions'
+import { addToFavoritesActionCreator } from 'src/redux/actions/favorites/actions'
 import { useAppDispatch, useAppSelector } from 'src/redux/hooks'
 import { ContactDto } from 'src/types/dto/ContactDto'
 import { Colors } from 'src/constants/colors'

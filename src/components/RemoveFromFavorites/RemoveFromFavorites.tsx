@@ -1,6 +1,6 @@
 import React from 'react'
-import { removeFromFavoritesActionCreator } from 'src/redux/actions/actions'
 import { useAppDispatch } from 'src/redux/hooks'
+import { removeFromFavoritesActionCreator } from 'src/redux/actions/favorites/actions'
 import { ContactDto } from 'src/types/dto/ContactDto'
 import { Colors } from 'src/constants/colors'
 

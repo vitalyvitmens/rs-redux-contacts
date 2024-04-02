@@ -1,9 +1,9 @@
+import { contacts } from 'src/__data__'
 import {
   ADD_NEW_CONTACT_ACTION,
-  ProjectActions,
   REMOVE_CONTACT_ACTION,
-} from './actions/types'
-import { contacts } from 'src/__data__'
+} from './actions/contacts/types'
+import { ProjectActions } from './actions/ProjectActions'
 
 export function contactsReducer(state = contacts, action: ProjectActions) {
   switch (action.type) {
