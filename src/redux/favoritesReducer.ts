@@ -2,7 +2,7 @@ import {
   ADD_TO_FAVORITES_ACTION,
   ProjectActions,
   REMOVE_FROM_FAVORITES_ACTION,
-} from './actions'
+} from './actions/types'
 import { ContactDto } from 'src/types/dto/ContactDto'
 
 export function favoritesReducer(

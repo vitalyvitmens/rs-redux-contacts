@@ -1,6 +1,6 @@
 import { Middleware } from 'redux'
 import { RootState } from './store'
-import { ProjectActions } from './actions'
+import { ProjectActions } from './actions/types'
 import { logAction } from '../metrics/logAction'
 
 export const logActionMiddleware: Middleware<{}, RootState> = (storeAPI) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { removeFromFavoritesActionCreator } from 'src/redux/actions'
+import { removeFromFavoritesActionCreator } from 'src/redux/actions/actions'
 import { useAppDispatch } from 'src/redux/hooks'
 import { ContactDto } from 'src/types/dto/ContactDto'
 import { Colors } from 'src/constants/colors'
