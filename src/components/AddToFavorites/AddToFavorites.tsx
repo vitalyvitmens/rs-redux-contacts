@@ -5,28 +5,26 @@ import { useAppDispatch, useAppSelector } from 'src/redux/hooks'
 import { ContactDto } from 'src/types/dto/ContactDto'
 import { Colors } from 'src/constants/colors'
 
-export const AddToFavorites: React.FC<{
-  contact: ContactDto
-}> = ({ contact }) => {
+export const AddToFavorites: React.FC<{ contact: ContactDto }> = ({
+  contact,
+}) => {
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
 
   const favorites = useAppSelector((state) => state.favorites)
 
-  let isInFavorites = favorites.find((tr) => tr.id === contact.id)
-    ? true
-    : false
+  const isInFavorites = favorites.some((tr) => tr.id === contact.id)
+
+  const handleClick = () => {
+    if (isInFavorites) {
+      navigate(RoutePaths.Favorit)
+    } else {
+      dispatch(addToFavoritesActionCreator(contact))
+    }
+  }
 
   return (
-    <div
-      onClick={() => {
-        if (isInFavorites) {
-          navigate(RoutePaths.Favorit)
-        } else {
-          dispatch(addToFavoritesActionCreator(contact))
-        }
-      }}
-    >
+    <div onClick={handleClick}>
       <svg
         className="heart"
         aria-hidden="true"
