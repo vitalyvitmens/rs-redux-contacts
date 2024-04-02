@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rs-redux-contacts/static/css/main.34f9cc40.css",
-    "main.js": "/rs-redux-contacts/static/js/main.d3418436.js",
+    "main.js": "/rs-redux-contacts/static/js/main.7967d6e4.js",
     "static/js/673.d89527e3.chunk.js": "/rs-redux-contacts/static/js/673.d89527e3.chunk.js",
     "static/css/940.3713b8b9.chunk.css": "/rs-redux-contacts/static/css/940.3713b8b9.chunk.css",
     "static/js/940.610bc745.chunk.js": "/rs-redux-contacts/static/js/940.610bc745.chunk.js",
@@ -24,7 +24,7 @@
     "static/media/bg.jpg": "/rs-redux-contacts/static/media/bg.b8b84408fe86b4e22594.jpg",
     "index.html": "/rs-redux-contacts/index.html",
     "main.34f9cc40.css.map": "/rs-redux-contacts/static/css/main.34f9cc40.css.map",
-    "main.d3418436.js.map": "/rs-redux-contacts/static/js/main.d3418436.js.map",
+    "main.7967d6e4.js.map": "/rs-redux-contacts/static/js/main.7967d6e4.js.map",
     "673.d89527e3.chunk.js.map": "/rs-redux-contacts/static/js/673.d89527e3.chunk.js.map",
     "940.3713b8b9.chunk.css.map": "/rs-redux-contacts/static/css/940.3713b8b9.chunk.css.map",
     "940.610bc745.chunk.js.map": "/rs-redux-contacts/static/js/940.610bc745.chunk.js.map",
@@ -47,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.34f9cc40.css",
-    "static/js/main.d3418436.js"
+    "static/js/main.7967d6e4.js"
   ]
 }
