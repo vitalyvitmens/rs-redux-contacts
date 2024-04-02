@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://vitalyvitmens.github.io/rs-redux-contacts/static/css/main.116916f0.css",
-    "main.js": "https://vitalyvitmens.github.io/rs-redux-contacts/static/js/main.2d21fed2.js",
+    "main.js": "https://vitalyvitmens.github.io/rs-redux-contacts/static/js/main.24898a83.js",
     "static/js/673.d89527e3.chunk.js": "https://vitalyvitmens.github.io/rs-redux-contacts/static/js/673.d89527e3.chunk.js",
     "static/css/940.3713b8b9.chunk.css": "https://vitalyvitmens.github.io/rs-redux-contacts/static/css/940.3713b8b9.chunk.css",
     "static/js/940.610bc745.chunk.js": "https://vitalyvitmens.github.io/rs-redux-contacts/static/js/940.610bc745.chunk.js",
@@ -24,7 +24,7 @@
     "static/media/bg.jpg": "https://vitalyvitmens.github.io/rs-redux-contacts/static/media/bg.b8b84408fe86b4e22594.jpg",
     "index.html": "https://vitalyvitmens.github.io/rs-redux-contacts/index.html",
     "main.116916f0.css.map": "https://vitalyvitmens.github.io/rs-redux-contacts/static/css/main.116916f0.css.map",
-    "main.2d21fed2.js.map": "https://vitalyvitmens.github.io/rs-redux-contacts/static/js/main.2d21fed2.js.map",
+    "main.24898a83.js.map": "https://vitalyvitmens.github.io/rs-redux-contacts/static/js/main.24898a83.js.map",
     "673.d89527e3.chunk.js.map": "https://vitalyvitmens.github.io/rs-redux-contacts/static/js/673.d89527e3.chunk.js.map",
     "940.3713b8b9.chunk.css.map": "https://vitalyvitmens.github.io/rs-redux-contacts/static/css/940.3713b8b9.chunk.css.map",
     "940.610bc745.chunk.js.map": "https://vitalyvitmens.github.io/rs-redux-contacts/static/js/940.610bc745.chunk.js.map",
@@ -47,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.116916f0.css",
-    "static/js/main.2d21fed2.js"
+    "static/js/main.24898a83.js"
   ]
 }
