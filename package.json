@@ -1,7 +1,6 @@
 {
   "name": "contacts",
   "version": "0.1.0",
-  "homepage": "https://vitalyvitmens.github.io/rs-redux-contacts",
   "private": true,
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.14.5",
